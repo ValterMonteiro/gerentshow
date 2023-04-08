@@ -1,5 +1,8 @@
 package br.edu.ifms.gerentshow.controller.mapper;
 
+import br.edu.ifms.gerentshow.controller.dto.MusicaRequest;
+import br.edu.ifms.gerentshow.controller.dto.MusicaResponse;
+import br.edu.ifms.gerentshow.model.dto.MusicaDto;
 
 public class MusicaMapper {
 
