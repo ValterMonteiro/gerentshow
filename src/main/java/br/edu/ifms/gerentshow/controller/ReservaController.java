@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.edu.ifms.gerentshow.controller.dto.ReservaRequest;
 import br.edu.ifms.gerentshow.controller.dto.ReservaResponse;
 import br.edu.ifms.gerentshow.controller.mapper.ReservaMapper;
+import br.edu.ifms.gerentshow.model.services.ReservaService;
 import br.edu.ifms.gerentshow.model.dto.ReservaDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -53,7 +54,7 @@ public class ReservaController {
 			ReservaDto ReservaDto = ReservaMapper.requestToDto(ReservaRequest);
 			ReservaDto ReservaDto2 = ReservaService.create(ReservaDto);
 			
-			ReservaResponse InstrumentoResponse = ReservaMapper.dtoToResponse(ReservaDto2);
+			ReservaResponse ReservaResponse = ReservaMapper.dtoToResponse(ReservaDto2);
 			return ResponseEntity.ok(ReservaResponse);
 		}
 }
