@@ -8,9 +8,10 @@ public class ReservaMapper {
 
 	public static ReservaDto requestToDto( ReservaRequest reservaRequest ) {
 		ReservaDto instrumentoDto = new ReservaDto();
-		ReservaDto.setData( reservaRequest.getData() );
-		ReservaDto.setValo( reservaRequest.getValor() );
-		return ReservaDto;
+		instrumentoDto.setData(reservaRequest.getData());
+		ReservaDto reservaDto = new ReservaDto();
+		reservaDto.setValor(reservaRequest.getValor());
+		return reservaDto;
 	}
 	
 	public static ReservaResponse dtoToResponse(ReservaDto reservaDto ) {
