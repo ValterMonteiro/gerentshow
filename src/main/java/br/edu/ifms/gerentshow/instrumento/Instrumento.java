@@ -4,10 +4,10 @@ package br.edu.ifms.gerentshow.instrumento;
 import br.edu.ifms.arch.BaseObject;
 import jakarta.persistence.Entity;
 import jakarta.persistence.SequenceGenerator;
-import lombok.AllArgsConstructor;
+/* import lombok.AllArgsConstructor; */
+/* import lombok.NoArgsConstructor; */
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
@@ -16,8 +16,8 @@ import lombok.experimental.SuperBuilder;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-@AllArgsConstructor
-@NoArgsConstructor
+/* @AllArgsConstructor */
+/* @NoArgsConstructor */
 @SuperBuilder
 @Entity
 @SequenceGenerator(sequenceName = "local_sequence", name = "baseObjectSequence", allocationSize = 1)
